@@ -13,7 +13,7 @@ public class PlayerControler_24_Ellson : MonoBehaviour
 
     int planeIndicator = 0;
 
-    
+    bool isGrounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -106,6 +106,8 @@ public class PlayerControler_24_Ellson : MonoBehaviour
 
     }
 
+   
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Plane_A"))
@@ -119,6 +121,9 @@ public class PlayerControler_24_Ellson : MonoBehaviour
             planeIndicator = 1;
         }
     }
+
+    
+
 
 }
 
